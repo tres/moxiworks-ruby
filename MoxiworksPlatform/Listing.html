@@ -475,6 +475,33 @@
       <li class="public ">
   <span class="summary_signature">
     
+      <a href="#community-instance_method" title="#community (instance method)">#<strong>community</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The community the property is located in.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
       <a href="#company_listing_attributes-instance_method" title="#company_listing_attributes (instance method)">#<strong>company_listing_attributes</strong>  &#x21d2; Array </a>
     
 
@@ -871,7 +898,34 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>MLS the listing is listed with.</p>
+<p>MLS area the listing is listed with.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#list_office_aor_area-instance_method" title="#list_office_aor_area (instance method)">#<strong>list_office_aor_area</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>MLS area the listing is listed with.</p>
 </div></span>
   
 </li>
@@ -1429,6 +1483,33 @@ This is expressed in the local time where the listing is located.” }.</p>
   
     <span class="summary_desc"><div class='inline'>
 <p>Agent generated comments regarding the property.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#public_title-instance_method" title="#public_title (instance method)">#<strong>public_title</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Title of the listing.</p>
 </div></span>
   
 </li>
@@ -2702,6 +2783,67 @@ listing agent.</p>
 </div>
     
       
+      <span id="community=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="community-instance_method">
+  
+    #<strong>community</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the community the property is located in.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the community the property is located in.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+73
+74
+75</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 73</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_community'>community</span>
+  <span class='ivar'>@community</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
       <span id="company_listing_attributes=-instance_method"></span>
       <div class="method_details ">
   <h3 class="signature " id="company_listing_attributes-instance_method">
@@ -2747,16 +2889,12 @@ listing agent.</p>
       <pre class="lines">
 
 
-73
-74
-75</pre>
+73</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 73</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_company_listing_attributes'>company_listing_attributes</span>
-  <span class='ivar'>@company_listing_attributes</span>
-<span class='kw'>end</span></pre>
+<span class='id identifier rubyid_attr_accessor'>attr_accessor</span> <span class='symbol'>:community</span></pre>
     </td>
   </tr>
 </table>
@@ -2808,12 +2946,12 @@ listing agent.</p>
       <pre class="lines">
 
 
-78
-79
-80</pre>
+83
+84
+85</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 78</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 83</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_county_or_parish'>county_or_parish</span>
   <span class='ivar'>@county_or_parish</span>
@@ -2869,12 +3007,12 @@ listing agent.</p>
       <pre class="lines">
 
 
-83
-84
-85</pre>
+88
+89
+90</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 83</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 88</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_created_date'>created_date</span>
   <span class='ivar'>@created_date</span>
@@ -2930,12 +3068,12 @@ listing agent.</p>
       <pre class="lines">
 
 
-88
-89
-90</pre>
+93
+94
+95</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 88</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 93</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_days_on_market'>days_on_market</span>
   <span class='ivar'>@days_on_market</span>
@@ -2991,12 +3129,12 @@ listing agent.</p>
       <pre class="lines">
 
 
-93
-94
-95</pre>
+98
+99
+100</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 93</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 98</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_elementary_school'>elementary_school</span>
   <span class='ivar'>@elementary_school</span>
@@ -3052,12 +3190,12 @@ listing agent.</p>
       <pre class="lines">
 
 
-98
-99
-100</pre>
+103
+104
+105</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 98</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 103</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_garage_spaces'>garage_spaces</span>
   <span class='ivar'>@garage_spaces</span>
@@ -3113,12 +3251,12 @@ listing agent.</p>
       <pre class="lines">
 
 
-103
-104
-105</pre>
+108
+109
+110</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 103</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 108</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_high_school'>high_school</span>
   <span class='ivar'>@high_school</span>
@@ -3174,12 +3312,12 @@ listing agent.</p>
       <pre class="lines">
 
 
-108
-109
-110</pre>
+113
+114
+115</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 108</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 113</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_internet_address_display_yn'>internet_address_display_yn</span>
   <span class='ivar'>@internet_address_display_yn</span>
@@ -3235,12 +3373,12 @@ listing agent.</p>
       <pre class="lines">
 
 
-113
-114
-115</pre>
+118
+119
+120</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 113</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 118</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_internet_entire_listing_display_yn'>internet_entire_listing_display_yn</span>
   <span class='ivar'>@internet_entire_listing_display_yn</span>
@@ -3296,12 +3434,12 @@ listing agent.</p>
       <pre class="lines">
 
 
-118
-119
-120</pre>
+123
+124
+125</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 118</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 123</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_latitude'>latitude</span>
   <span class='ivar'>@latitude</span>
@@ -3357,12 +3495,12 @@ listing agent.</p>
       <pre class="lines">
 
 
-123
-124
-125</pre>
+128
+129
+130</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 123</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 128</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_agent_full_name'>list_agent_full_name</span>
   <span class='ivar'>@list_agent_full_name</span>
@@ -3418,12 +3556,12 @@ listing agent.</p>
       <pre class="lines">
 
 
-128
-129
-130</pre>
+133
+134
+135</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 128</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 133</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_agent_moxi_works_office_id'>list_agent_moxi_works_office_id</span>
   <span class='ivar'>@list_agent_moxi_works_office_id</span>
@@ -3479,12 +3617,12 @@ listing agent.</p>
       <pre class="lines">
 
 
-133
-134
-135</pre>
+138
+139
+140</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 133</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 138</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_agent_office_id'>list_agent_office_id</span>
   <span class='ivar'>@list_agent_office_id</span>
@@ -3540,12 +3678,12 @@ listing agent.</p>
       <pre class="lines">
 
 
-138
-139
-140</pre>
+143
+144
+145</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 138</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 143</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_agent_uuid'>list_agent_uuid</span>
   <span class='ivar'>@list_agent_uuid</span>
@@ -3569,7 +3707,7 @@ listing agent.</p>
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Returns MLS the listing is listed with</p>
+<p>Returns MLS area the listing is listed with</p>
 
 
   </div>
@@ -3588,7 +3726,7 @@ listing agent.</p>
       
         &mdash;
         <div class='inline'>
-<p>MLS the listing is listed with</p>
+<p>MLS area the listing is listed with</p>
 </div>
       
     </li>
@@ -3601,15 +3739,76 @@ listing agent.</p>
       <pre class="lines">
 
 
-153
-154
-155</pre>
+158
+159
+160</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 153</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 158</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_office_aor'>list_office_aor</span>
   <span class='ivar'>@list_office_aor</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="list_office_aor_area=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="list_office_aor_area-instance_method">
+  
+    #<strong>list_office_aor_area</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns MLS area the listing is listed with</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>MLS area the listing is listed with</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+163
+164
+165</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 163</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_list_office_aor_area'>list_office_aor_area</span>
+  <span class='ivar'>@list_office_aor_area</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -3662,12 +3861,12 @@ listing agent.</p>
       <pre class="lines">
 
 
-143
-144
-145</pre>
+148
+149
+150</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 143</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 148</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_office_name'>list_office_name</span>
   <span class='ivar'>@list_office_name</span>
@@ -3723,12 +3922,12 @@ listing agent.</p>
       <pre class="lines">
 
 
-148
-149
-150</pre>
+153
+154
+155</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 148</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 153</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_price'>list_price</span>
   <span class='ivar'>@list_price</span>
@@ -3784,12 +3983,12 @@ listing agent.</p>
       <pre class="lines">
 
 
-158
-159
-160</pre>
+168
+169
+170</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 158</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 168</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_listing_contract_date'>listing_contract_date</span>
   <span class='ivar'>@listing_contract_date</span>
@@ -3845,12 +4044,12 @@ listing agent.</p>
       <pre class="lines">
 
 
-163
-164
-165</pre>
+173
+174
+175</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 163</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 173</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_listing_id'>listing_id</span>
   <span class='ivar'>@listing_id</span>
@@ -3934,12 +4133,12 @@ mime_type: [String] MIME or media type of the image</code></pre>
       <pre class="lines">
 
 
-188
-189
-190</pre>
+198
+199
+200</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 188</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 198</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_listing_images'>listing_images</span>
   <span class='ivar'>@listing_images</span>
@@ -3995,12 +4194,12 @@ mime_type: [String] MIME or media type of the image</code></pre>
       <pre class="lines">
 
 
-168
-169
-170</pre>
+178
+179
+180</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 168</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 178</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_listing_url'>listing_url</span>
   <span class='ivar'>@listing_url</span>
@@ -4056,12 +4255,12 @@ mime_type: [String] MIME or media type of the image</code></pre>
       <pre class="lines">
 
 
-193
-194
-195</pre>
+203
+204
+205</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 193</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 203</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_living_area'>living_area</span>
   <span class='ivar'>@living_area</span>
@@ -4117,12 +4316,12 @@ mime_type: [String] MIME or media type of the image</code></pre>
       <pre class="lines">
 
 
-198
-199
-200</pre>
+208
+209
+210</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 198</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 208</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_longitude'>longitude</span>
   <span class='ivar'>@longitude</span>
@@ -4178,12 +4377,12 @@ mime_type: [String] MIME or media type of the image</code></pre>
       <pre class="lines">
 
 
-203
-204
-205</pre>
+213
+214
+215</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 203</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 213</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_lot_size_acres'>lot_size_acres</span>
   <span class='ivar'>@lot_size_acres</span>
@@ -4239,12 +4438,12 @@ mime_type: [String] MIME or media type of the image</code></pre>
       <pre class="lines">
 
 
-208
-209
-210</pre>
+218
+219
+220</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 208</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 218</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_lot_size_square_feet'>lot_size_square_feet</span>
   <span class='ivar'>@lot_size_square_feet</span>
@@ -4300,12 +4499,12 @@ mime_type: [String] MIME or media type of the image</code></pre>
       <pre class="lines">
 
 
-213
-214
-215</pre>
+223
+224
+225</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 213</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 223</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_middle_or_junior_school'>middle_or_junior_school</span>
   <span class='ivar'>@middle_or_junior_school</span>
@@ -4361,12 +4560,12 @@ mime_type: [String] MIME or media type of the image</code></pre>
       <pre class="lines">
 
 
-226
-227
-228</pre>
+236
+237
+238</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 226</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 236</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_modification_timestamp'>modification_timestamp</span>
   <span class='ivar'>@modification_timestamp</span>
@@ -4424,12 +4623,12 @@ mime_type: [String] MIME or media type of the image</code></pre>
       <pre class="lines">
 
 
-221
-222
-223</pre>
+231
+232
+233</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 221</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 231</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_moxi_works_listing_id'>moxi_works_listing_id</span>
   <span class='ivar'>@moxi_works_listing_id</span>
@@ -4485,12 +4684,12 @@ mime_type: [String] MIME or media type of the image</code></pre>
       <pre class="lines">
 
 
-231
-232
-233</pre>
+241
+242
+243</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 231</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 241</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_on_market'>on_market</span>
   <span class='ivar'>@on_market</span>
@@ -4556,12 +4755,12 @@ mime_type: [String] MIME or media type of the image</code></pre>
       <pre class="lines">
 
 
-311
-312
-313</pre>
+321
+322
+323</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 311</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 321</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_open_house'>open_house</span>
   <span class='ivar'>@open_house</span>
@@ -4617,12 +4816,12 @@ mime_type: [String] MIME or media type of the image</code></pre>
       <pre class="lines">
 
 
-236
-237
-238</pre>
+246
+247
+248</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 236</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 246</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_pool_yn'>pool_yn</span>
   <span class='ivar'>@pool_yn</span>
@@ -4678,12 +4877,12 @@ mime_type: [String] MIME or media type of the image</code></pre>
       <pre class="lines">
 
 
-241
-242
-243</pre>
+251
+252
+253</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 241</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 251</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_postal_code'>postal_code</span>
   <span class='ivar'>@postal_code</span>
@@ -4739,12 +4938,12 @@ mime_type: [String] MIME or media type of the image</code></pre>
       <pre class="lines">
 
 
-246
-247
-248</pre>
+256
+257
+258</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 246</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 256</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_property_features'>property_features</span>
   <span class='ivar'>@property_features</span>
@@ -4804,12 +5003,12 @@ mime_type: [String] MIME or media type of the image</code></pre>
       <pre class="lines">
 
 
-251
-252
-253</pre>
+261
+262
+263</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 251</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 261</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_property_type'>property_type</span>
   <span class='ivar'>@property_type</span>
@@ -4865,15 +5064,76 @@ mime_type: [String] MIME or media type of the image</code></pre>
       <pre class="lines">
 
 
-256
-257
-258</pre>
+266
+267
+268</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 256</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 266</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_public_remarks'>public_remarks</span>
   <span class='ivar'>@public_remarks</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="public_title=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="public_title-instance_method">
+  
+    #<strong>public_title</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns Title of the listing</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Title of the listing</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+336
+337
+338</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 336</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_public_title'>public_title</span>
+  <span class='ivar'>@public_title</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -4927,12 +5187,12 @@ agent.</p>
       <pre class="lines">
 
 
-321
-322
-323</pre>
+331
+332
+333</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 321</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 331</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_secondary_list_agent_full_name'>secondary_list_agent_full_name</span>
   <span class='ivar'>@secondary_list_agent_full_name</span>
@@ -4990,12 +5250,12 @@ listing agent. This will correspond to the uuid field of an Agent.</p>
       <pre class="lines">
 
 
-316
-317
-318</pre>
+326
+327
+328</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 316</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 326</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_secondary_list_agent_uuid'>secondary_list_agent_uuid</span>
   <span class='ivar'>@secondary_list_agent_uuid</span>
@@ -5051,12 +5311,12 @@ listing agent. This will correspond to the uuid field of an Agent.</p>
       <pre class="lines">
 
 
-261
-262
-263</pre>
+271
+272
+273</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 261</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 271</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_single_story'>single_story</span>
   <span class='ivar'>@single_story</span>
@@ -5112,10 +5372,10 @@ listing agent. This will correspond to the uuid field of an Agent.</p>
       <pre class="lines">
 
 
-266</pre>
+276</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 266</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 276</span>
 
 <span class='id identifier rubyid_attr_accessor'>attr_accessor</span> <span class='symbol'>:state_or_province</span></pre>
     </td>
@@ -5169,12 +5429,12 @@ listing agent. This will correspond to the uuid field of an Agent.</p>
       <pre class="lines">
 
 
-266
-267
-268</pre>
+276
+277
+278</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 266</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 276</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_state_or_province'>state_or_province</span>
   <span class='ivar'>@state_or_province</span>
@@ -5230,12 +5490,12 @@ listing agent. This will correspond to the uuid field of an Agent.</p>
       <pre class="lines">
 
 
-271
-272
-273</pre>
+281
+282
+283</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 271</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 281</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_status'>status</span>
   <span class='ivar'>@status</span>
@@ -5291,12 +5551,12 @@ listing agent. This will correspond to the uuid field of an Agent.</p>
       <pre class="lines">
 
 
-276
-277
-278</pre>
+286
+287
+288</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 276</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 286</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_tax_annual_amount'>tax_annual_amount</span>
   <span class='ivar'>@tax_annual_amount</span>
@@ -5352,12 +5612,12 @@ listing agent. This will correspond to the uuid field of an Agent.</p>
       <pre class="lines">
 
 
-281
-282
-283</pre>
+291
+292
+293</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 281</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 291</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_tax_year'>tax_year</span>
   <span class='ivar'>@tax_year</span>
@@ -5413,16 +5673,12 @@ listing agent. This will correspond to the uuid field of an Agent.</p>
       <pre class="lines">
 
 
-326
-327
-328</pre>
+336</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 326</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 336</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_title'>title</span>
-  <span class='ivar'>@title</span>
-<span class='kw'>end</span></pre>
+<span class='id identifier rubyid_attr_accessor'>attr_accessor</span> <span class='symbol'>:public_title</span></pre>
     </td>
   </tr>
 </table>
@@ -5474,12 +5730,12 @@ listing agent. This will correspond to the uuid field of an Agent.</p>
       <pre class="lines">
 
 
-286
-287
-288</pre>
+296
+297
+298</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 286</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 296</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_view_yn'>view_yn</span>
   <span class='ivar'>@view_yn</span>
@@ -5535,12 +5791,12 @@ listing agent. This will correspond to the uuid field of an Agent.</p>
       <pre class="lines">
 
 
-301
-302
-303</pre>
+311
+312
+313</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 301</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 311</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_virtual_tour_url'>virtual_tour_url</span>
   <span class='ivar'>@virtual_tour_url</span>
@@ -5596,12 +5852,12 @@ listing agent. This will correspond to the uuid field of an Agent.</p>
       <pre class="lines">
 
 
-291
-292
-293</pre>
+301
+302
+303</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 291</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 301</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_waterfront_yn'>waterfront_yn</span>
   <span class='ivar'>@waterfront_yn</span>
@@ -5657,12 +5913,12 @@ listing agent. This will correspond to the uuid field of an Agent.</p>
       <pre class="lines">
 
 
-296
-297
-298</pre>
+306
+307
+308</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 296</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 306</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_year_built'>year_built</span>
   <span class='ivar'>@year_built</span>
@@ -5795,13 +6051,13 @@ aren&#39;t included</p>
       <pre class="lines">
 
 
-339
-340
-341
-342</pre>
+349
+350
+351
+352</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 339</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 349</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_find'>find</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='const'>MoxiworksPlatform</span><span class='op'>::</span><span class='const'>Config</span><span class='period'>.</span><span class='id identifier rubyid_url'>url</span><span class='embexpr_end'>}</span><span class='tstring_content'>/api/listings/</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:moxi_works_listing_id</span><span class='rbracket'>]</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
@@ -6038,16 +6294,6 @@ aren&#39;t included</p>
       <pre class="lines">
 
 
-415
-416
-417
-418
-419
-420
-421
-422
-423
-424
 425
 426
 427
@@ -6081,10 +6327,20 @@ aren&#39;t included</p>
 455
 456
 457
-458</pre>
+458
+459
+460
+461
+462
+463
+464
+465
+466
+467
+468</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 415</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 425</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_search'>search</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='comma'>,</span> <span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_url'>url</span> <span class='op'>||=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='const'>MoxiworksPlatform</span><span class='op'>::</span><span class='const'>Config</span><span class='period'>.</span><span class='id identifier rubyid_url'>url</span><span class='embexpr_end'>}</span><span class='tstring_content'>/api/listings</span><span class='tstring_end'>&quot;</span></span>
@@ -6172,16 +6428,6 @@ aren&#39;t included</p>
       <pre class="lines">
 
 
-344
-345
-346
-347
-348
-349
-350
-351
-352
-353
 354
 355
 356
@@ -6194,10 +6440,20 @@ aren&#39;t included</p>
 363
 364
 365
-366</pre>
+366
+367
+368
+369
+370
+371
+372
+373
+374
+375
+376</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 344</span>
+      <pre class="code"><span class="info file"># File 'lib/moxiworks_platform/listing.rb', line 354</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_send_request'>send_request</span><span class='lparen'>(</span><span class='id identifier rubyid_method'>method</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='comma'>,</span> <span class='id identifier rubyid_url'>url</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_url'>url</span> <span class='op'>||=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='const'>MoxiworksPlatform</span><span class='op'>::</span><span class='const'>Config</span><span class='period'>.</span><span class='id identifier rubyid_url'>url</span><span class='embexpr_end'>}</span><span class='tstring_content'>/api/listings</span><span class='tstring_end'>&quot;</span></span>
@@ -6232,7 +6488,7 @@ aren&#39;t included</p>
 </div>
 
       <div id="footer">
-  Generated on Fri Dec 21 14:34:10 2018 by
+  Generated on Fri Dec 21 14:40:28 2018 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.5 (ruby-2.2.4).
 </div>
